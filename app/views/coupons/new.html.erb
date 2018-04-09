@@ -1,6 +1,12 @@
 <h1> Coupon Form </h1>
-<form class="" action= "<%=coupons_path%>" method="post">
+<%= form_tag coupons_path do %>
+<%= text_field_tag :coupon_code %>
+<%= text_field_tag :store %>
+<%= submit_tag "Submit Coupon" %>
+<% end %>
+
+<!-- <form class="" action= "<%=coupons_path%>" method="post">
   <input type="text" name="coupon_code" id="coupon_code" value="">
   <input type="text" name="store" id="store" value="">
   <input type="submit" name="Submit Coupon" value="Submit Coupon">
-</form>
+</form> -->
